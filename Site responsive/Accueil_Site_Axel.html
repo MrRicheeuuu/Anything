@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+        
+        <!-- En-tête de la page -->
+        
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <title>Site d'Axel</title>
+
+<style>
+
+body {margin: 0px; background: url(Background.jpeg) scroll; background-size: cover; font-family: Trebuchet MS;}
+strong {color: skyblue;}
+
+        /* Liens topnav */
+.header a {display: inline-block; text-decoration: none; color: white; padding: 12px 2% 12px 2%; font-family: cursive;}
+.header a:hover {background-color: #34383D; color: lightgray; border-radius: 5px;}
+.header #rechercher {display: inline-block; color: black; margin: 12px 2% 12px 1%; float: right;}
+.header #recherche {display: inline-block; color: black; margin: 12px 1% 12px 1%; float: right; max-width: 10%;}
+.header {background: #444B55; color: white; position: fixed; float: left; width: 100%; box-shadow: 0px 2px 10px black; z-index: 1;}
+
+        /* Titres */
+*{box-sizing: border-box;}
+.first.title {float: left; width: 98%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 60px 1% 0px 1%; color: black; text-align: center; border-radius: 5px; border: 2px dashed gray;}
+.second.title {float: left; width: 98%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; text-align: center; border-radius: 5px; border: 2px dashed gray;}
+
+        /* Colonnes */
+.box.side25 {float: left; width: 23%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; border-radius: 5px;}
+.box.mid50 {float: left; width: 48%; padding: 5px; background: rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; border-radius: 5px;}
+
+        /* Contenu colonnes */
+#texte {column-count: 2; column-rule: 1px solid;}
+
+        /* Footer */
+.footer ul{padding: 30px; text-align: left; border-left: 5px solid dodgerblue; border-radius: 5px; background: rgba(30, 144, 255, 0.5);}
+.footer button {float: center; border-radius: 5px; padding: 5px; border: none; box-shadow: 0px 0px 8px black;}
+.footer #avis {display: inline; background: white; border-radius: 5px; color:  black; margin: 0px 1% 0px 1%; width: 10%;}
+footer {background: #444B55;color: white; margin-top: 15px;text-align: center; padding: 20px; border-top: 2px dashed white;}
+
+        /* Tous les # */
+
+#vidéo-grèce {border-radius: 5px; max-width: 100%; border: 1px solid lightgray; padding: 3px;}
+#vidéo-grèce:hover {border: 1px solid black; padding: 3px; box-shadow: 0px 0px 8px; background: black;}
+
+    .row:after {content: ""; display: table; clear: both;}
+     @media screen and (max-width:700px) {.box.mid50, .box.side25 {width: 98%;}}
+
+</style>
+
+<script>
+
+        // body...
+function oui() {document.getElementById("avis").innerHTML = "Votre avis à bien été pris en compte."}
+function non() {document.getElementById("avis").innerHTML = "C'est bizarre, je n'entends pas les rageux."}
+
+</script>
+
+</head>
+
+
+<body>
+
+<div class="header">
+        <form action="">
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Accueil_Site_Axel.html"><strong>Home</strong></a>
+        <a href="https://www.w3schools.com/css/css_combinators.asp">W3Schools</a>
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Page_2_Axel.html">Page 2</a>
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Page_3_Axel.html">Page 3</a>
+        <input type="submit" name="" value="Rechercher" id="rechercher">
+        <input type="email" name="" value="" id="recherche">
+        </form>
+</div>
+
+<div class="row">
+    
+        <div class="first title">
+                <h1>Titre</h1>
+        </div>
+    
+        <div class="box side25">
+        <p>Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+        </div>
+            
+
+        <div class="box mid50">
+        <p id="texte">Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+
+        <video id="vidéo-grèce" width="100%" controls>
+        <source src="vidéo-grèce.mp4">
+        </video>
+
+        <p id="texte">Cras eleifend velit elementum magna facilisis, ac pretium dolor pulvinar. Proin feugiat tempus odio vel convallis. Aliquam felis orci, varius eu gravida a, suscipit ut eros. In hac habitasse platea dictumst. Cras auctor mi a aliquet facilisis. Vestibulum elementum, arcu a faucibus mollis, lectus est mattis lectus, ac facilisis nibh orci at lorem. Integer volutpat consequat est molestie luctus. Maecenas laoreet maximus blandit. Cras placerat in velit ac consequat. Cras eu condimentum urna. Praesent sed sagittis erat. Quisque placerat nisl ligula, eget scelerisque sapien mollis non. Phasellus augue est, sagittis eget leo vel, hendrerit porta orci. Aenean vel consequat urna. Fusce posuere sodales odio. Praesent non aliquam erat, eu dignissim nibh.</p>
+
+        <p>Nam vel risus purus. Ut egestas enim mi, a accumsan metus euismod ut. Mauris in ligula at augue posuere luctus. Maecenas gravida vitae elit et vestibulum. Phasellus ultricies velit nulla, egestas porta diam tincidunt quis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Donec vitae leo velit. Aliquam mattis nunc a faucibus posuere. Phasellus a sapien erat.</p>
+        </div>
+    
+
+    <div class="box side25">
+
+    <ul>
+                <li>Vivamus varius est sed augue luctus fermentum.</li>
+                <hr>
+                <li>Integer blandit metus non est condimentum dignissim.</li>
+                <hr>
+                <li>Nunc semper risus vel venenatis facilisis.</li>
+                <hr>
+                <li>Pellentesque fringilla diam ac justo sollicitudin, blandit sollicitudin magna pharetra.
+                </li>
+                <hr>
+                <li>In consectetur sapien vel auctor tempor.</li>
+                <hr>
+                <li>Aliquam molestie sapien vel mauris semper, id porttitor velit iaculis.</li>
+                <hr>
+                <li>Duis cursus lectus ut fermentum rutrum.</li>
+                <hr>
+                <li>Proin faucibus nulla quis nunc aliquam, eu tincidunt arcu mollis.</li>
+                <hr>
+                <li>Cras cursus purus eget euismod euismod.</li>
+                <hr>
+                <li>Aenean nec eros sed neque ultricies sollicitudin in in arcu.</li>
+                <hr>
+                <li>Donec sagittis massa at aliquet interdum.</li>
+                <hr>
+                <li>Etiam placerat magna et magna fringilla, quis placerat dui fringilla.</li>
+                <hr>
+                <li>Nulla sed mi in arcu vehicula interdum.</li>
+                <hr>
+                <li>Aliquam ut neque cursus, cursus ante a, volutpat libero.</li>
+      
+                </ul>
+        </div>
+</div>
+
+<footer>
+
+<div class="footer">
+
+        <p>
+        <caption>Aimez-vous cette rubrique ?</caption>
+        <button id="yep" onmouseover="this.style.backgroundColor='mediumseagreen'" onmouseleave="this.style.backgroundColor='white'" onclick="oui()">J'aime</button>
+        <button id="nop" onmouseover="this.style.backgroundColor='tomato'" onmouseleave="this.style.backgroundColor='white'" onclick="non()">Je n'aime pas</button>
+        </p>
+
+        <span id="avis"></span>
+
+        <ul>
+    
+                <li>Auteur: <i>Axel - Barbier</i></li>
+                <li>Tél: <i>06 87 54 60 49</i></li>
+                <li>Mail: <i>BarbierAxel@gmail.com</i></li>
+        </ul>
+
+</div>
+
+<h1>Fin de la page d'Accueil</h1>
+
+</footer>
+
+</body>
+
+
+</html>

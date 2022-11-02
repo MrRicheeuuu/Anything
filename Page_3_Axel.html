@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+        
+        <!-- En-tête de la page -->
+        
+        <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <title>Site d'Axel</title>
+
+<style>
+
+body {margin: 0px; background: url(Background.jpeg) scroll; background-size: cover; font-family: Trebuchet MS;}
+strong {color: skyblue;}
+
+        /* Liens topnav */
+.header a {display: inline-block; text-decoration: none; color: white; padding: 12px 2% 12px 2%; font-family: cursive;}
+.header a:hover {background-color: #34383D; color: lightgray; border-radius: 5px;}
+.header #rechercher {display: inline-block; color: black; margin: 12px 2% 12px 1%; float: right;}
+.header #recherche {display: inline-block; color: black; margin: 12px 1% 12px 1%; float: right; max-width: 10%;}
+.header {background: #444B55; color: white; position: fixed; float: left; width: 100%; box-shadow: 0px 2px 10px black; z-index: 1;}
+
+        /* Titres */
+*{box-sizing: border-box;}
+.first.title {float: left; width: 98%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 60px 1% 0px 1%; color: black; text-align: center; border-radius: 5px; border: 2px dashed gray;}
+.second.title {float: left; width: 98%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 15px 1% 5px 1%; color: black; text-align: center; border-radius: 5px; border: 2px dashed gray;}
+
+        /* Colonnes */
+.box.side50 {float: left; width: 48%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; border-radius: 5px;}
+.box.side25 {float: left; width: 23%; padding: 5px; background:  rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; border-radius: 5px;}
+.box.mid50 {float: left; width: 48%; padding: 5px; background: rgba(999, 999, 999, 0.8); margin: 15px 1% 0px 1%; color: black; border-radius: 5px;}
+
+        /* Contenu des colonnes */
+iframe {border: none;}
+
+        /* Footer */
+.footer ul{padding: 30px; text-align: left; border-left: 5px solid dodgerblue; border-radius: 5px; background: rgba(30, 144, 255, 0.5);}
+.footer button {float: center; border-radius: 5px; padding: 5px; border: none;}
+.footer #avis {display: inline; background: white; border-radius: 5px; color:  black; margin: 0px 1% 0px 1%; width: 10%;}
+footer {background: #444B55;color: white; margin-top: 15px;text-align: center; padding: 20px; border-top: 2px dashed white;}
+
+    .row:after {content: ""; display: table; clear: both;}
+     @media screen and (max-width:700px) {.boxtop.side25, .boxtop.mid50, .box.side50, .box.side25, .box.mid50 {width: 98%;}}
+
+</style>
+
+<script>
+
+        // body...
+function oui() {document.getElementById("avis").innerHTML = "Votre avis à bien été pris en compte."}
+function non() {document.getElementById("avis").innerHTML = "C'est bizarre, je n'entends pas les rageux."}
+
+</script>
+
+</head>
+
+<body>
+
+<div class="header">
+        <form action="">
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Accueil_Site_Axel.html">Home</a>
+        <a href="https://www.w3schools.com/css/css_combinators.asp">W3Schools</a>
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Page_2_Axel.html">Page 2</a>
+        <a href="file:///C:/Users/barbi/OneDrive/Documents/Coding/Essais%20perso/Site%20responsive/Page_3_Axel.html"><strong>Page 3</strong></a>
+        <input type="submit" name="" value="Rechercher" id="rechercher">
+        <input type="email" name="" value="" id="recherche">
+        </form>
+</div>
+
+<div class="row">
+    
+        <div class="first title">
+                <h1>Titre</h1>
+        </div>
+
+        <div class="box side25">
+
+        </div>
+    
+
+        <div class="box mid50">
+
+        </div>
+
+
+        <div class="box side25">
+
+        </div>
+</div>
+
+<div class="row">
+
+        <div class="second title">
+                <h1>Titre</h1>
+        </div>
+
+        <div class="box side50">
+                <video width="100%" max-height="400px" id="vidéo" src="Camp d'été scout 2021 (1920x1080).mp4" controls>
+                </video>
+        </div>
+    
+
+        <div class="box side50">
+
+        </div>
+</div>
+
+
+
+<div class="row">
+    
+        <div class="second title">
+                <h1>Titre</h1>
+        </div>
+
+        <div class="box side25">
+
+        </div>
+            
+
+        <div class="box mid50">
+
+        </div>
+
+
+        <div class="box side25">
+
+        </div>
+</div>
+
+
+<footer>
+
+<div class="footer">
+
+        <p>
+        <caption>Aimez-vous cette rubrique ?</caption>
+        <button id="yep" onmouseover="this.style.backgroundColor='mediumseagreen'" onmouseleave="this.style.backgroundColor='white'" onclick="oui()">J'aime</button>
+        <button id="nop" onmouseover="this.style.backgroundColor='tomato'" onmouseleave="this.style.backgroundColor='white'" onclick="non()">Je n'aime pas</button>
+        </p>
+
+        <span id="avis"></span>
+<ul>
+    
+        <li><i>Auteur: Axel - Barbier</i></li>
+        <li><i>Tél: 06 87 54 60 49</i></li>
+        <li><i>Mail: BarbierAxel@gmail.com</i></li>
+</ul>
+
+</div>
+
+<h1>Fin de la page 3</h1>
+
+</footer>
+
+</body>
+
+
+</html>
